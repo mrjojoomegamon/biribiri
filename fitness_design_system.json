@@ -1,0 +1,268 @@
+{
+  "sistemaDiseño": {
+    "perfilMarca": {
+      "nombreMarca": "BIRIBIRI",
+      "categoria": "marca_premium",
+      "estetica": "audaz_moderna_impactante",
+      "audienciaObjetivo": "consumidores_exigentes",
+      "personalidadMarca": ["fuerte", "confiable", "orientada_rendimiento", "premium"]
+    },
+    "paletaColores": {
+      "primarios": {
+        "fondoPrincipal": "#1a1a1a",
+        "fondoSecundario": "#2a2a2a",
+        "acento": "#e31e24",
+        "acentoHover": "#c41e24"
+      },
+      "texto": {
+        "primario": "#ffffff",
+        "secundario": "#cccccc",
+        "acento": "#e31e24",
+        "destacado": "#ffd700"
+      },
+      "interfaz": {
+        "borde": "#333333",
+        "superposicion": "rgba(0, 0, 0, 0.8)",
+        "sombra": "rgba(0, 0, 0, 0.5)"
+      }
+    },
+    "tipografia": {
+      "jerarquia": {
+        "titulo": {
+          "tamañoFuente": "clamp(2.5rem, 5vw, 4rem)",
+          "pesoFuente": "900",
+          "alturaLinea": "1.1",
+          "espaciadoLetras": "0.02em",
+          "transformacionTexto": "uppercase",
+          "familiaFuente": "sans-serif-bold"
+        },
+        "subtitulo": {
+          "tamañoFuente": "clamp(1.2rem, 2.5vw, 1.8rem)",
+          "pesoFuente": "600",
+          "alturaLinea": "1.3",
+          "espaciadoLetras": "0.05em",
+          "transformacionTexto": "uppercase"
+        },
+        "cuerpo": {
+          "tamañoFuente": "1rem",
+          "pesoFuente": "400",
+          "alturaLinea": "1.6",
+          "espaciadoLetras": "0.01em"
+        },
+        "leyenda": {
+          "tamañoFuente": "0.875rem",
+          "pesoFuente": "500",
+          "alturaLinea": "1.4",
+          "espaciadoLetras": "0.02em",
+          "transformacionTexto": "uppercase"
+        }
+      },
+      "tratamientos": {
+        "enfasis": {
+          "color": "#e31e24",
+          "pesoFuente": "bold"
+        },
+        "destacado": {
+          "colorFondo": "#ffd700",
+          "color": "#000000",
+          "relleno": "0.2em 0.4em",
+          "bordeRedondeado": "4px"
+        }
+      }
+    },
+    "maquetacion": {
+      "contenedor": {
+        "anchoMaximo": "1400px",
+        "relleno": "0 2rem",
+        "margen": "0 auto"
+      },
+      "rejilla": {
+        "columnas": 12,
+        "espacioColumnas": "2rem",
+        "puntosRuptura": {
+          "movil": "768px",
+          "tableta": "1024px",
+          "escritorio": "1400px"
+        }
+      },
+      "espaciado": {
+        "xs": "0.5rem",
+        "sm": "1rem",
+        "md": "2rem",
+        "lg": "4rem",
+        "xl": "6rem",
+        "xxl": "8rem"
+      }
+    },
+    "componentes": {
+      "cabecera": {
+        "estructura": "navegacion_fija",
+        "fondo": "#000000",
+        "altura": "80px",
+        "elementos": {
+          "logo": {
+            "posicion": "izquierda",
+            "tamaño": "mediano",
+            "tratamiento": "blanco_sobre_oscuro",
+            "texto": "BIRIBIRI"
+          },
+          "navegacion": {
+            "estilo": "menu_horizontal",
+            "estadoActivo": "fondo_destacado",
+            "tamañoFuente": "0.9rem",
+            "pesoFuente": "600",
+            "transformacionTexto": "uppercase",
+            "espaciadoLetras": "0.05em"
+          },
+          "llamadaAccion": {
+            "posicion": "derecha",
+            "estilo": "informacion_contacto_con_icono",
+            "color": "#e31e24"
+          }
+        }
+      },
+      "bannerPromocional": {
+        "fondo": "gradiente_o_acento_solido",
+        "posicion": "debajo_cabecera",
+        "relleno": "1rem 0",
+        "alineacionTexto": "centro",
+        "elementos": {
+          "titular": {
+            "tamañoFuente": "1.5rem",
+            "pesoFuente": "900",
+            "transformacionTexto": "uppercase",
+            "espaciadoLetras": "0.1em"
+          },
+          "subtexto": {
+            "tamañoFuente": "1rem",
+            "pesoFuente": "400"
+          },
+          "cta": {
+            "estilo": "boton_destacado",
+            "margenIzquierdo": "1rem"
+          }
+        }
+      },
+      "seccionPrincipal": {
+        "maquetacion": "contenido_dividido_producto",
+        "fondo": "oscuro_con_textura",
+        "alturaMinima": "70vh",
+        "elementos": {
+          "contenido": {
+            "ancho": "50%",
+            "relleno": "4rem",
+            "alineacionVertical": "centro"
+          },
+          "producto": {
+            "ancho": "50%",
+            "estiloImagen": "fotografia_producto_alto_contraste",
+            "posicionamiento": "centrado_con_profundidad"
+          }
+        }
+      },
+      "botones": {
+        "primario": {
+          "colorFondo": "#e31e24",
+          "color": "#ffffff",
+          "relleno": "1rem 2.5rem",
+          "tamañoFuente": "1.1rem",
+          "pesoFuente": "700",
+          "transformacionTexto": "uppercase",
+          "espaciadoLetras": "0.05em",
+          "bordeRedondeado": "0px",
+          "borde": "none",
+          "transicion": "all 0.3s ease",
+          "estadoHover": {
+            "colorFondo": "#c41e24",
+            "transformacion": "translateY(-2px)"
+          }
+        },
+        "secundario": {
+          "colorFondo": "transparent",
+          "color": "#ffffff",
+          "borde": "2px solid #ffffff",
+          "relleno": "1rem 2.5rem",
+          "estadoHover": {
+            "colorFondo": "#ffffff",
+            "color": "#000000"
+          }
+        }
+      },
+      "insignias": {
+        "estilo": "destacado_circular",
+        "colorFondo": "#ffd700",
+        "color": "#000000",
+        "tamañoFuente": "0.8rem",
+        "pesoFuente": "bold",
+        "transformacionTexto": "uppercase",
+        "posicion": "absolute",
+        "indiceZ": 10
+      }
+    },
+    "imagenes": {
+      "fotografiaProducto": {
+        "estilo": "estudio_alto_contraste",
+        "fondo": "oscuro_o_transparente",
+        "iluminacion": "dramatica_con_sombras",
+        "angulo": "vista_tres_cuartos",
+        "tratamiento": "bordes_nitidos_definidos"
+      },
+      "fondos": {
+        "primario": "colores_oscuros_solidos",
+        "textura": "concreto_o_metal_sutil",
+        "superposicion": "gradientes_oscuros"
+      }
+    },
+    "efectosVisuales": {
+      "sombras": {
+        "tarjeta": "0 8px 32px rgba(0, 0, 0, 0.3)",
+        "boton": "0 4px 16px rgba(227, 30, 36, 0.3)",
+        "texto": "2px 2px 4px rgba(0, 0, 0, 0.8)"
+      },
+      "animaciones": {
+        "hover": "elevacion_suave_y_brillo",
+        "entrada": "fade_up_con_escala",
+        "transicion": "300ms_ease_in_out"
+      },
+      "bordes": {
+        "estilo": "lineas_limpias_definidas",
+        "radio": "minimo_o_ninguno",
+        "acento": "destacados_rojos_finos"
+      }
+    },
+    "estrategiaContenido": {
+      "mensajeria": {
+        "tono": "confiado_autoritativo",
+        "estructura": "titulares_enfocados_beneficios",
+        "palabrasClave": ["premium", "rendimiento", "resultados", "fuerza", "poder"]
+      },
+      "jerarquia": {
+        "primaria": "declaracion_beneficio_audaz",
+        "secundaria": "detalles_soporte",
+        "terciaria": "prueba_social_o_caracteristicas"
+      }
+    },
+    "patronesInteraccion": {
+      "navegacion": "separacion_clara_categorias",
+      "ubicacionCTA": "accion_primaria_prominente",
+      "retroalimentacion": "respuesta_visual_inmediata",
+      "carga": "indicadores_progreso_colores_marca"
+    },
+    "estrategiaResponsiva": {
+      "movil": {
+        "navegacion": "menu_hamburguesa",
+        "maquetacion": "columna_unica_apilada",
+        "imagenes": "imagenes_hero_ancho_completo",
+        "tipografia": "escalada_reducida_pero_audaz"
+      },
+      "tableta": {
+        "maquetacion": "dos_columnas_modificado",
+        "navegacion": "horizontal_condensado"
+      },
+      "escritorio": {
+        "maquetacion": "maquetaciones_pantalla_dividida_completa",
+        "navegacion": "menu_horizontal_completo"
+      }
+    }
+  }
+}
