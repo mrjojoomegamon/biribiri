@@ -157,7 +157,12 @@ export class ProductCardComponent {
   quantity = 1;
 
   getProductImage(): string {
-    return `https://via.placeholder.com/400x400/2a2a2a/e31e24?text=${encodeURIComponent(this.product.name)}`;
+    const images: { [key: string]: string } = {
+      '1': 'https://images.unsplash.com/photo-1593095948071-474c5cc2989d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+      '2': 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+      '3': 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
+    };
+    return images[this.product.id] || 'https://images.unsplash.com/photo-1593095948071-474c5cc2989d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80';
   }
 
   getCategoryName(): string {

@@ -3,7 +3,13 @@
     "allow": [
       "Bash(npm uninstall:*)",
       "Bash(npm install:*)",
-      "Bash(npm start)"
+      "Bash(npm start)",
+      "WebFetch(domain:www.pexels.com)",
+      "WebFetch(domain:unsplash.com)",
+      "Bash(curl:*)",
+      "Bash(ng serve)",
+      "Bash(git remote add:*)",
+      "Bash(git add:*)"
     ],
     "deny": []
   }

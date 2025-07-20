@@ -69,7 +69,7 @@ import { Service, Supplement } from '../../core/models';
               NUEVO
             </div>
             <img 
-              src="https://via.placeholder.com/400x500/2a2a2a/e31e24?text=BIRIBIRI+WHEY" 
+              src="https://images.unsplash.com/photo-1593095948071-474c5cc2989d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" 
               alt="BIRIBIRI Whey Pro" 
               class="w-full h-auto max-w-sm mx-auto rounded-lg shadow-lg">
             <div class="mt-6 text-center">
@@ -158,7 +158,7 @@ import { Service, Supplement } from '../../core/models';
             class="group bg-bg-secondary p-6 rounded-lg shadow-card hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
             <div class="relative mb-6">
               <img 
-                [src]="'https://via.placeholder.com/300x300/2a2a2a/e31e24?text=' + supplement.name.replace(' ', '+')" 
+[src]="getSupplementImage(supplement.id)" 
                 [alt]="supplement.name"
                 class="w-full h-48 object-cover rounded-lg">
               <div 
@@ -235,5 +235,14 @@ export class HomeComponent implements OnInit {
     this.dataService.getSupplements().subscribe(supplements => {
       this.featuredSupplements = supplements;
     });
+  }
+
+  getSupplementImage(id: string): string {
+    const images: { [key: string]: string } = {
+      '1': 'https://images.unsplash.com/photo-1593095948071-474c5cc2989d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80',
+      '2': 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80',
+      '3': 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80'
+    };
+    return images[id] || 'https://images.unsplash.com/photo-1593095948071-474c5cc2989d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80';
   }
 }

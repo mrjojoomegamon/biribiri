@@ -16,13 +16,13 @@ import { ButtonComponent } from '../../shared/components/button/button.component
           <!-- Content -->
           <div class="animate-fade-up">
             <h1 class="text-title font-black uppercase tracking-wider text-text-primary mb-6">
-              CONOCE AL
-              <span class="block text-accent">ESPECIALISTA</span>
+              RICHARD BIRIBIRI
+              <span class="block text-accent">CARMONA</span>
             </h1>
             <p class="text-xl text-text-secondary leading-relaxed mb-8">
-              Más de 10 años transformando atletas y ayudando a personas a alcanzar 
-              su máximo potencial físico. Mi misión es simple: resultados reales 
-              respaldados por ciencia.
+              Del tatami al laboratorio: Más de 15 años perfeccionando técnicas de elite 
+              que transforman no solo tu físico, sino tu mente y rendimiento integral. 
+              Porque el verdadero poder viene de la optimización científica.
             </p>
             <div class="flex flex-col sm:flex-row gap-4">
               <app-button size="lg" routerLink="/contacto">
@@ -38,7 +38,7 @@ import { ButtonComponent } from '../../shared/components/button/button.component
           <div class="relative">
             <div class="relative z-10">
               <img 
-                src="https://via.placeholder.com/500x600/2a2a2a/e31e24?text=FOTO+PROFESIONAL" 
+src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
                 alt="Fisioterapeuta especialista"
                 class="w-full max-w-md mx-auto rounded-lg shadow-card">
             </div>
@@ -66,61 +66,70 @@ import { ButtonComponent } from '../../shared/components/button/button.component
           <div class="space-y-8">
             <div class="bg-bg-primary p-8 rounded-lg shadow-card">
               <h3 class="text-xl font-bold uppercase tracking-wider text-accent mb-4">
-                🎯 FILOSOFÍA PROFESIONAL
+                🎯 FILOSOFÍA: OPTIMIZACIÓN INTEGRAL
               </h3>
               <p class="text-text-secondary leading-relaxed">
-                Creo firmemente que cada atleta es único y merece un enfoque personalizado. 
-                Mi metodología combina las últimas evidencias científicas con técnicas 
-                probadas para garantizar no solo la recuperación, sino la optimización 
-                del rendimiento. No hay atajos hacia la excelencia, pero sí caminos más inteligentes.
+                No entreno cuerpos, transformo sistemas completos. Mi metodología combina 
+                técnicas de combate de elite con ciencia deportiva avanzada para optimizar 
+                tu respiración, concentración y postura. El resultado: no solo músculos más fuertes, 
+                sino mejor rendimiento cognitivo, digestión mejorada, performance sexual optimizada 
+                y salud articular de por vida. Cada sesión es una inversión en tu longevidad atlética.
               </p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div class="bg-bg-primary p-8 rounded-lg shadow-card">
                 <h3 class="text-xl font-bold uppercase tracking-wider text-accent mb-4">
-                  📚 FORMACIÓN ACADÉMICA
+                  📚 FORMACIÓN CIENTÍFICA
                 </h3>
                 <ul class="space-y-3 text-text-secondary">
                   <li class="flex items-start space-x-3">
-                    <span class="text-accent mt-1">•</span>
-                    <span>Grado en Fisioterapia - Universidad Complutense de Madrid</span>
+                    <span class="text-accent mt-1">🥋</span>
+                    <span><strong>Cinturón Negro Jiu-Jitsu</strong> - Técnicas de combate aplicadas</span>
                   </li>
                   <li class="flex items-start space-x-3">
-                    <span class="text-accent mt-1">•</span>
-                    <span>Máster en Fisioterapia Deportiva - UEM</span>
+                    <span class="text-accent mt-1">🏋️</span>
+                    <span><strong>Certificación en Musculación y Entrenamiento con Pesas</strong></span>
                   </li>
                   <li class="flex items-start space-x-3">
-                    <span class="text-accent mt-1">•</span>
-                    <span>Especialización en Terapia Manual Ortopédica</span>
+                    <span class="text-accent mt-1">🧬</span>
+                    <span><strong>Diplomado en Nutrición y Dietética</strong></span>
                   </li>
                   <li class="flex items-start space-x-3">
-                    <span class="text-accent mt-1">•</span>
-                    <span>Certificación en Análisis Biomecánico 3D</span>
+                    <span class="text-accent mt-1">⚡</span>
+                    <span><strong>Diplomado en Asistencia a la Nutrición Deportiva</strong></span>
+                  </li>
+                  <li class="flex items-start space-x-3">
+                    <span class="text-accent mt-1">🎓</span>
+                    <span><strong>En formación:</strong> Fisioterapia Deportiva Avanzada</span>
                   </li>
                 </ul>
               </div>
 
               <div class="bg-bg-primary p-8 rounded-lg shadow-card">
                 <h3 class="text-xl font-bold uppercase tracking-wider text-accent mb-4">
-                  🏆 EXPERIENCIA PROFESIONAL
+                  🏆 EXPERIENCIA MULTIDISCIPLINARIA
                 </h3>
                 <ul class="space-y-3 text-text-secondary">
                   <li class="flex items-start space-x-3">
-                    <span class="text-accent mt-1">•</span>
-                    <span>10+ años en rehabilitación deportiva</span>
+                    <span class="text-accent mt-1">🥊</span>
+                    <span><strong>Halterofilia & Jiu-Jitsu:</strong> Competencia profesional de elite</span>
                   </li>
                   <li class="flex items-start space-x-3">
-                    <span class="text-accent mt-1">•</span>
-                    <span>Fisioterapeuta oficial Real Madrid CF (2018-2020)</span>
+                    <span class="text-accent mt-1">🏃</span>
+                    <span><strong>Parkour, Calistenia & Street Workout:</strong> Dominio del peso corporal</span>
                   </li>
                   <li class="flex items-start space-x-3">
-                    <span class="text-accent mt-1">•</span>
-                    <span>500+ atletas profesionales tratados</span>
+                    <span class="text-accent mt-1">🚴</span>
+                    <span><strong>Ciclismo de Alto Rendimiento:</strong> Resistencia y técnica</span>
                   </li>
                   <li class="flex items-start space-x-3">
-                    <span class="text-accent mt-1">•</span>
-                    <span>Consultor para equipos olímpicos españoles</span>
+                    <span class="text-accent mt-1">⚡</span>
+                    <span><strong>15+ años</strong> perfeccionando técnicas de movimiento</span>
+                  </li>
+                  <li class="flex items-start space-x-3">
+                    <span class="text-accent mt-1">🧠</span>
+                    <span><strong>Especialista en optimización</strong> cognitiva a través del ejercicio</span>
                   </li>
                 </ul>
               </div>
@@ -146,34 +155,34 @@ import { ButtonComponent } from '../../shared/components/button/button.component
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
           <div class="text-center group">
             <div class="text-4xl font-black text-accent mb-2 group-hover:scale-110 transition-transform">
-              500+
+              6+
             </div>
             <div class="text-sm font-semibold uppercase tracking-wider text-text-secondary">
-              Atletas Tratados
+              Disciplinas Dominadas
             </div>
           </div>
           <div class="text-center group">
             <div class="text-4xl font-black text-accent mb-2 group-hover:scale-110 transition-transform">
-              98%
+              4+
             </div>
             <div class="text-sm font-semibold uppercase tracking-wider text-text-secondary">
-              Tasa de Éxito
+              Títulos Científicos
             </div>
           </div>
           <div class="text-center group">
             <div class="text-4xl font-black text-accent mb-2 group-hover:scale-110 transition-transform">
-              15
+              15+
             </div>
             <div class="text-sm font-semibold uppercase tracking-wider text-text-secondary">
-              Certificaciones
+              Años de Elite
             </div>
           </div>
           <div class="text-center group">
             <div class="text-4xl font-black text-accent mb-2 group-hover:scale-110 transition-transform">
-              10+
+              100%
             </div>
             <div class="text-sm font-semibold uppercase tracking-wider text-text-secondary">
-              Años Experiencia
+              Enfoque Integral
             </div>
           </div>
         </div>
@@ -182,37 +191,37 @@ import { ButtonComponent } from '../../shared/components/button/button.component
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div class="bg-bg-secondary p-8 rounded-lg shadow-card text-center group hover:-translate-y-2 transition-transform">
             <div class="w-16 h-16 bg-text-highlight rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-              <span class="text-2xl">🏆</span>
+              <span class="text-2xl">🥋</span>
             </div>
             <h3 class="text-lg font-bold uppercase tracking-wider text-text-primary mb-2">
-              MEJOR FISIOTERAPEUTA 2023
+              CINTURÓN NEGRO JIU-JITSU
             </h3>
             <p class="text-text-secondary text-sm">
-              Colegio Profesional de Fisioterapeutas de Madrid
+              Técnicas de combate aplicadas al entrenamiento
             </p>
           </div>
 
           <div class="bg-bg-secondary p-8 rounded-lg shadow-card text-center group hover:-translate-y-2 transition-transform">
             <div class="w-16 h-16 bg-text-highlight rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-              <span class="text-2xl">🥇</span>
+              <span class="text-2xl">🧬</span>
             </div>
             <h3 class="text-lg font-bold uppercase tracking-wider text-text-primary mb-2">
-              EXCELENCIA EN INNOVACIÓN
+              METODOLOGÍA CIENTÍFICA
             </h3>
             <p class="text-text-secondary text-sm">
-              Congreso Nacional de Fisioterapia Deportiva
+              Análisis biomecánico y optimización del movimiento
             </p>
           </div>
 
           <div class="bg-bg-secondary p-8 rounded-lg shadow-card text-center group hover:-translate-y-2 transition-transform">
             <div class="w-16 h-16 bg-text-highlight rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-              <span class="text-2xl">⭐</span>
+              <span class="text-2xl">⚡</span>
             </div>
             <h3 class="text-lg font-bold uppercase tracking-wider text-text-primary mb-2">
-              RECONOCIMIENTO UEFA
+              OPTIMIZACIÓN INTEGRAL
             </h3>
             <p class="text-text-secondary text-sm">
-              Contribución al deporte profesional europeo
+              Rendimiento físico, mental y sexual
             </p>
           </div>
         </div>
@@ -224,10 +233,11 @@ import { ButtonComponent } from '../../shared/components/button/button.component
       <div class="max-w-container mx-auto px-4">
         <div class="text-center mb-16">
           <h2 class="text-subtitle font-black uppercase tracking-wider text-text-primary mb-4">
-            ÁREAS DE ESPECIALIZACIÓN
+            TÉCNICAS DE ELITE
           </h2>
           <p class="text-text-secondary max-w-2xl mx-auto">
-            Técnicas avanzadas para resultados excepcionales
+            Metodologías exclusivas que combinan ciencia deportiva con artes marciales 
+            para optimización integral del rendimiento
           </p>
         </div>
 
@@ -235,16 +245,14 @@ import { ButtonComponent } from '../../shared/components/button/button.component
           <div class="bg-bg-primary p-6 rounded-lg shadow-card group hover:-translate-y-2 transition-all duration-300">
             <div class="mb-4">
               <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
-                <svg class="w-6 h-6 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                </svg>
+                <span class="text-xl">🥋</span>
               </div>
               <h3 class="text-lg font-bold uppercase tracking-wider text-text-primary mb-2">
-                LESIONES DEPORTIVAS
+                TÉCNICAS DE COMBATE APLICADAS
               </h3>
               <p class="text-text-secondary text-sm leading-relaxed">
-                Especializado en lesiones de fútbol, running, crossfit y deportes de contacto. 
-                Protocolos específicos para cada disciplina.
+                Metodología única que combina jiu-jitsu y halterofilia para desarrollar 
+                fuerza funcional, resistencia mental y técnica impecable.
               </p>
             </div>
           </div>
@@ -257,11 +265,11 @@ import { ButtonComponent } from '../../shared/components/button/button.component
                 </svg>
               </div>
               <h3 class="text-lg font-bold uppercase tracking-wider text-text-primary mb-2">
-                TERAPIA MANUAL
+                OPTIMIZACIÓN COGNITIVA
               </h3>
               <p class="text-text-secondary text-sm leading-relaxed">
-                Técnicas de movilización articular, manipulación vertebral y liberación 
-                miofascial para restaurar la función óptima.
+                Técnicas específicas de respiración y concentración que mejoran el 
+                rendimiento mental, la digestión y la función cognitiva.
               </p>
             </div>
           </div>
@@ -358,17 +366,17 @@ import { ButtonComponent } from '../../shared/components/button/button.component
               <span class="text-text-secondary text-sm">5.0/5</span>
             </div>
             <p class="text-text-secondary mb-6 italic leading-relaxed">
-              "Después de 6 meses lesionado, en 8 semanas estaba de vuelta en el campo. 
-              Su enfoque científico y personalizado marca la diferencia."
+              "Las técnicas de respiración y concentración de Richard no solo mejoraron 
+              mi fuerza, sino también mi enfoque mental en competencias. Un enfoque único."
             </p>
             <div class="flex items-center">
               <img 
-                src="https://via.placeholder.com/50x50/e31e24/ffffff?text=CM" 
-                alt="Carlos Martínez"
+src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=50&q=80" 
+                alt="Miguel Torres"
                 class="w-12 h-12 rounded-full mr-4">
               <div>
-                <div class="font-bold text-text-primary">Carlos Martínez</div>
-                <div class="text-sm text-text-secondary">Futbolista Profesional</div>
+                <div class="font-bold text-text-primary">Miguel Torres</div>
+                <div class="text-sm text-text-secondary">Atleta de Halterofilia</div>
               </div>
             </div>
           </div>
@@ -381,17 +389,17 @@ import { ButtonComponent } from '../../shared/components/button/button.component
               <span class="text-text-secondary text-sm">5.0/5</span>
             </div>
             <p class="text-text-secondary mb-6 italic leading-relaxed">
-              "No solo me recuperé, sino que ahora corro más rápido que antes de la lesión. 
-              Su metodología es simplemente excepcional."
+              "El análisis biomecánico de Richard revolucionó mi entrenamiento. Ahora cada 
+              movimiento tiene propósito y mis PRs no paran de subir. Increíble."
             </p>
             <div class="flex items-center">
               <img 
-                src="https://via.placeholder.com/50x50/e31e24/ffffff?text=LG" 
-                alt="Laura García"
+src="https://images.unsplash.com/photo-1494790108755-2616b612b524?ixlib=rb-4.0.3&auto=format&fit=crop&w=50&q=80" 
+                alt="Ana Ruiz"
                 class="w-12 h-12 rounded-full mr-4">
               <div>
-                <div class="font-bold text-text-primary">Laura García</div>
-                <div class="text-sm text-text-secondary">Maratonista Elite</div>
+                <div class="font-bold text-text-primary">Ana Ruiz</div>
+                <div class="text-sm text-text-secondary">Crossfit Competidora</div>
               </div>
             </div>
           </div>
@@ -404,17 +412,17 @@ import { ButtonComponent } from '../../shared/components/button/button.component
               <span class="text-text-secondary text-sm">5.0/5</span>
             </div>
             <p class="text-text-secondary mb-6 italic leading-relaxed">
-              "Un profesional excepcional. Me ayudó a entender mi cuerpo y a prevenir 
-              futuras lesiones. Altamente recomendado."
+              "Como practicante de jiu-jitsu, las técnicas de Richard me dieron una ventaja 
+              competitiva increíble. Su conocimiento del combate es excepcional."
             </p>
             <div class="flex items-center">
               <img 
-                src="https://via.placeholder.com/50x50/e31e24/ffffff?text=MR" 
-                alt="Miguel Rodríguez"
+src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=50&q=80" 
+                alt="Carlos Mendoza"
                 class="w-12 h-12 rounded-full mr-4">
               <div>
-                <div class="font-bold text-text-primary">Miguel Rodríguez</div>
-                <div class="text-sm text-text-secondary">Crossfit Atleta</div>
+                <div class="font-bold text-text-primary">Carlos Mendoza</div>
+                <div class="text-sm text-text-secondary">Cinturón Púrpura BJJ</div>
               </div>
             </div>
           </div>

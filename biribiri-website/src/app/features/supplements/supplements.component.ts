@@ -174,7 +174,7 @@ import { Supplement } from '../../core/models';
               <!-- Product Image -->
               <div class="md:w-1/4 h-48 md:h-auto relative">
                 <img 
-                  [src]="'https://via.placeholder.com/300x300/2a2a2a/e31e24?text=' + supplement.name.replace(' ', '+')"
+  [src]="getSupplementImage(supplement.id)"
                   [alt]="supplement.name"
                   class="w-full h-full object-cover">
                 <div 
@@ -414,5 +414,14 @@ export class SupplementsComponent implements OnInit {
 
   trackBySupplementId(index: number, supplement: Supplement): string {
     return supplement.id;
+  }
+
+  getSupplementImage(id: string): string {
+    const images: { [key: string]: string } = {
+      '1': 'https://images.unsplash.com/photo-1593095948071-474c5cc2989d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80',
+      '2': 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80',
+      '3': 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80'
+    };
+    return images[id] || 'https://images.unsplash.com/photo-1593095948071-474c5cc2989d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80';
   }
 }

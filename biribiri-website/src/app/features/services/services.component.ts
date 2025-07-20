@@ -70,7 +70,7 @@ import { Service } from '../../core/models';
             <!-- Service Image -->
             <div class="relative h-48 bg-gradient-to-br from-accent to-accent-hover overflow-hidden">
               <img 
-                [src]="'https://via.placeholder.com/400x300/e31e24/ffffff?text=' + service.name.replace(' ', '+')"
+[src]="getServiceImage(service.id)"
                 [alt]="service.name"
                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
               <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition-all duration-300"></div>
@@ -344,5 +344,14 @@ export class ServicesComponent implements OnInit {
 
   trackByServiceId(index: number, service: Service): string {
     return service.id;
+  }
+
+  getServiceImage(id: string): string {
+    const images: { [key: string]: string } = {
+      '1': 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+      '2': 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+      '3': 'https://images.unsplash.com/photo-1506629905607-bb5bb9c43d2a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
+    };
+    return images[id] || 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80';
   }
 }

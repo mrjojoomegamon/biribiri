@@ -72,7 +72,7 @@ import { ButtonComponent } from '../../shared/components/button/button.component
         <div class="hidden md:flex items-center space-x-4">
           <div class="text-right">
             <div class="text-sm text-text-secondary">Agenda tu cita</div>
-            <div class="text-lg font-bold text-accent">+1 234 567 8900</div>
+            <div class="text-lg font-bold text-accent">+52 55 7426 4946</div>
           </div>
           <app-button routerLink="/contacto">
             RESERVAR CITA
