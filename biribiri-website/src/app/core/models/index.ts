@@ -13,7 +13,7 @@ export interface Supplement {
   name: string;
   description: string;
   price: number;
-  category: 'protein' | 'vitamins' | 'performance' | 'recovery';
+  category: 'oils' | 'capsules' | 'liquids' | 'creams' | 'soaps';
   image: string;
   inStock: boolean;
   rating: number;

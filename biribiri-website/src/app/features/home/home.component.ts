@@ -218,6 +218,65 @@ import { Service, Supplement } from '../../core/models';
         </div>
       </div>
     </section>
+
+    <!-- Merchandise Section -->
+    <section class="py-20 bg-bg-secondary">
+      <div class="max-w-container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <!-- Content -->
+          <div class="animate-fade-up">
+            <div class="inline-block bg-accent px-4 py-2 rounded-full mb-6">
+              <span class="text-sm font-bold uppercase tracking-wider text-text-primary">
+                👕 MERCHANDISE OFICIAL
+              </span>
+            </div>
+            <h2 class="text-subtitle font-black uppercase tracking-wider text-text-primary mb-6">
+              VISTE LA
+              <span class="block text-accent">MARCA BIRIBIRI</span>
+            </h2>
+            <p class="text-xl text-text-secondary leading-relaxed mb-8">
+              Ropa deportiva de alta calidad que representa el estilo de vida BIRIBIRI. 
+              Comodidad, durabilidad y diseño exclusivo para los verdaderos atletas.
+            </p>
+            <div class="space-y-4 mb-8">
+              <div class="flex items-center">
+                <span class="text-accent mr-3">✓</span>
+                <span class="text-text-secondary">Material premium de alta durabilidad</span>
+              </div>
+              <div class="flex items-center">
+                <span class="text-accent mr-3">✓</span>
+                <span class="text-text-secondary">Diseños exclusivos BIRIBIRI</span>
+              </div>
+              <div class="flex items-center">
+                <span class="text-accent mr-3">✓</span>
+                <span class="text-text-secondary">Perfecta para entrenamientos y uso casual</span>
+              </div>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <app-button size="lg" routerLink="/contacto">
+                SOLICITAR CATÁLOGO
+              </app-button>
+              <app-button variant="secondary" size="lg">
+                VER DISPONIBILIDAD
+              </app-button>
+            </div>
+          </div>
+
+          <!-- Merchandise Image -->
+          <div class="relative">
+            <div class="relative z-10">
+              <img 
+                src="/assets/images/merchandise-hoodie.jpg" 
+                alt="Merchandise BIRIBIRI - Sudaderas personalizadas"
+                class="w-full max-w-md mx-auto rounded-lg shadow-card">
+            </div>
+            <!-- Decorative Elements -->
+            <div class="absolute -top-8 -left-8 w-24 h-24 bg-accent rounded-full opacity-20"></div>
+            <div class="absolute -bottom-8 -right-8 w-32 h-32 border-4 border-accent rounded-full opacity-30"></div>
+          </div>
+        </div>
+      </div>
+    </section>
   `,
   styles: []
 })

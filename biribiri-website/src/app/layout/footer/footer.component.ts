@@ -13,9 +13,15 @@ import { RouterModule } from '@angular/router';
           
           <!-- Brand Section -->
           <div class="md:col-span-2">
-            <h3 class="text-2xl font-black tracking-wider text-text-primary mb-4">
-              BIRIBIRI
-            </h3>
+            <div class="flex items-center mb-4">
+              <img 
+                src="/assets/images/logo.jpg" 
+                alt="BIRIBIRI Logo"
+                class="h-10 w-auto mr-3">
+              <h3 class="text-2xl font-black tracking-wider text-text-primary">
+                BIRIBIRI
+              </h3>
+            </div>
             <p class="text-text-secondary mb-6 max-w-md">
               Centro especializado en fisioterapia deportiva y suplementos premium. 
               Llevamos tu rendimiento al siguiente nivel con ciencia y dedicación.

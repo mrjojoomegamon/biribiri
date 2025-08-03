@@ -9,7 +9,18 @@
       "Bash(curl:*)",
       "Bash(ng serve)",
       "Bash(git remote add:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git push:*)",
+      "Bash(ng build:*)",
+      "Bash(npx angular-cli-ghpages:*)",
+      "Bash(git checkout:*)",
+      "Bash(rm:*)",
+      "Bash(cp:*)",
+      "Bash(mkdir:*)",
+      "Bash(ls:*)",
+      "Bash(mv:*)",
+      "Bash(taskkill:*)",
+      "Bash(ng serve:*)"
     ],
     "deny": []
   }

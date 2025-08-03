@@ -28,8 +28,14 @@ import { ButtonComponent } from '../../shared/components/button/button.component
       <nav class="h-20 flex items-center justify-between max-w-container mx-auto px-4">
         <!-- Logo -->
         <div class="flex items-center">
-          <a routerLink="/" class="text-3xl font-black tracking-wider text-text-primary hover:text-accent transition-colors">
-            BIRIBIRI
+          <a routerLink="/" class="flex items-center hover:opacity-80 transition-opacity">
+            <img 
+              src="/assets/images/logo.jpg" 
+              alt="BIRIBIRI Logo"
+              class="h-12 w-auto mr-3">
+            <span class="text-3xl font-black tracking-wider text-text-primary hover:text-accent transition-colors">
+              BIRIBIRI
+            </span>
           </a>
         </div>
 

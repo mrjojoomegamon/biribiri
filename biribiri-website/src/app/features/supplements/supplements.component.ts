@@ -18,16 +18,16 @@ import { Supplement } from '../../core/models';
         <div class="animate-fade-up">
           <div class="inline-block bg-accent px-4 py-2 rounded-full mb-6">
             <span class="text-sm font-bold uppercase tracking-wider text-text-primary">
-              💊 NUTRICIÓN CIENTÍFICA
+              🌿 PRODUCTOS NATURALES
             </span>
           </div>
           <h1 class="text-title font-black uppercase tracking-wider text-text-primary mb-6">
-            SUPLEMENTOS
+            PRODUCTOS NATURALES
             <span class="block text-accent">PREMIUM</span>
           </h1>
           <p class="text-xl text-text-secondary max-w-3xl mx-auto mb-8">
-            Fórmulas científicamente respaldadas y testadas por atletas de elite. 
-            Calidad farmacéutica para resultados excepcionales.
+            Catálogo completo de productos naturales: aceites esenciales, cápsulas, líquidos,
+            cremas y jabones artesanales para tu bienestar integral.
           </p>
           
           <!-- Hero Stats -->
@@ -60,7 +60,7 @@ import { Supplement } from '../../core/models';
               type="text"
               [(ngModel)]="searchTerm"
               (input)="applyFilters()"
-              placeholder="Buscar suplementos..."
+              placeholder="Buscar productos naturales..."
               class="w-full bg-bg-primary border border-border rounded-lg px-4 py-3 pl-12 text-text-primary placeholder-text-secondary focus:border-accent focus:outline-none transition-colors">
             <svg class="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
@@ -76,28 +76,34 @@ import { Supplement } from '../../core/models';
               TODOS
             </button>
             <button 
-              (click)="filterByCategory('protein')"
-              [class]="getCategoryButtonClasses('protein')"
+              (click)="filterByCategory('oils')"
+              [class]="getCategoryButtonClasses('oils')"
               class="px-4 py-2 rounded-lg font-semibold uppercase tracking-wider text-sm transition-all duration-300">
-              PROTEÍNAS
+              ACEITES
             </button>
             <button 
-              (click)="filterByCategory('vitamins')"
-              [class]="getCategoryButtonClasses('vitamins')"
+              (click)="filterByCategory('capsules')"
+              [class]="getCategoryButtonClasses('capsules')"
               class="px-4 py-2 rounded-lg font-semibold uppercase tracking-wider text-sm transition-all duration-300">
-              VITAMINAS
+              CÁPSULAS
             </button>
             <button 
-              (click)="filterByCategory('performance')"
-              [class]="getCategoryButtonClasses('performance')"
+              (click)="filterByCategory('liquids')"
+              [class]="getCategoryButtonClasses('liquids')"
               class="px-4 py-2 rounded-lg font-semibold uppercase tracking-wider text-sm transition-all duration-300">
-              RENDIMIENTO
+              LÍQUIDOS
             </button>
             <button 
-              (click)="filterByCategory('recovery')"
-              [class]="getCategoryButtonClasses('recovery')"
+              (click)="filterByCategory('creams')"
+              [class]="getCategoryButtonClasses('creams')"
               class="px-4 py-2 rounded-lg font-semibold uppercase tracking-wider text-sm transition-all duration-300">
-              RECUPERACIÓN
+              CREMAS
+            </button>
+            <button 
+              (click)="filterByCategory('soaps')"
+              [class]="getCategoryButtonClasses('soaps')"
+              class="px-4 py-2 rounded-lg font-semibold uppercase tracking-wider text-sm transition-all duration-300">
+              JABONES
             </button>
           </div>
 
@@ -275,10 +281,10 @@ import { Supplement } from '../../core/models';
               </svg>
             </div>
             <h3 class="text-lg font-bold uppercase tracking-wider text-text-primary mb-2">
-              CALIDAD PREMIUM
+              PUREZA 100%
             </h3>
             <p class="text-text-secondary text-sm">
-              Ingredientes de grado farmacéutico y pureza garantizada
+              Aceites esenciales puros sin aditivos ni diluyentes
             </p>
           </div>
 
@@ -292,7 +298,7 @@ import { Supplement } from '../../core/models';
               ENTREGA RÁPIDA
             </h3>
             <p class="text-text-secondary text-sm">
-              Envío en 24-48 horas a toda España
+              Envío en 24-48 horas a toda la República Mexicana
             </p>
           </div>
 
@@ -317,10 +323,10 @@ import { Supplement } from '../../core/models';
               </svg>
             </div>
             <h3 class="text-lg font-bold uppercase tracking-wider text-text-primary mb-2">
-              SOPORTE EXPERTO
+              ASESORÍA ESPECIALIZADA
             </h3>
             <p class="text-text-secondary text-sm">
-              Asesoramiento profesional incluido
+              Orientación profesional en aromaterapia y uso seguro
             </p>
           </div>
         </div>
@@ -397,10 +403,11 @@ export class SupplementsComponent implements OnInit {
 
   getCategoryName(category: string): string {
     const categories: { [key: string]: string } = {
-      'protein': 'PROTEÍNA',
-      'vitamins': 'VITAMINAS',
-      'performance': 'RENDIMIENTO',
-      'recovery': 'RECUPERACIÓN'
+      'oils': 'ACEITES',
+      'capsules': 'CÁPSULAS',
+      'liquids': 'LÍQUIDOS',
+      'creams': 'CREMAS',
+      'soaps': 'JABONES'
     };
     return categories[category] || category.toUpperCase();
   }
@@ -418,10 +425,77 @@ export class SupplementsComponent implements OnInit {
 
   getSupplementImage(id: string): string {
     const images: { [key: string]: string } = {
-      '1': 'https://images.unsplash.com/photo-1593095948071-474c5cc2989d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80',
-      '2': 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80',
-      '3': 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80'
+      // ACEITES ESENCIALES
+      '1': 'https://images.unsplash.com/photo-1601132359864-c974e79890ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Canela
+      '2': 'https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Pino
+      '3': 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Bergamota
+      '4': 'https://images.unsplash.com/photo-1571841842169-9e1b6203af2b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Romero
+      '5': 'https://images.unsplash.com/photo-1542843137-8791a6904d14?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Pomelo
+      '6': 'https://images.unsplash.com/photo-1581839761415-e3e42515abac?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Anís Estrella
+      '7': 'https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Limón
+      '8': 'https://images.unsplash.com/photo-1611892448416-b4d8e4929dbd?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Lavanda
+      '9': 'https://images.unsplash.com/photo-1599181064012-06d23de5c58d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Jengibre
+      '10': 'https://images.unsplash.com/photo-1570546421935-aa4de82d75d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Menta
+      '11': 'https://images.unsplash.com/photo-1576773740275-46ac73f37eed?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Clavo
+      '12': 'https://images.unsplash.com/photo-1616690553171-c60fc6f8ecff?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Eucalipto
+      '13': 'https://images.unsplash.com/photo-1582735689369-4fe89db7114c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Naranja
+      '14': 'https://images.unsplash.com/photo-1523805009345-7448845a9e53?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Sándalo
+      '15': 'https://images.unsplash.com/photo-1471947295511-d5ae59bfb1ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Tomillo
+      '16': 'https://images.unsplash.com/photo-1607166452427-7e4477079cb9?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Árbol del Té
+      '17': 'https://images.unsplash.com/photo-1615379292090-3a5e5adf19e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Hierbabuena
+      '18': 'https://images.unsplash.com/photo-1584552080143-56c94e5ba2b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Aceite Tos y Gripe
+      '19': 'https://images.unsplash.com/photo-1608798139665-9e7b8ec63a9f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Relajación y Estrés
+      '20': 'https://images.unsplash.com/photo-1597747216704-5b851b17fe18?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Caída del Pelo
+      
+      // CÁPSULAS
+      '21': 'https://images.unsplash.com/photo-1584017911766-d451b3d0e843?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Glucosamina
+      '22': 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Hongos Complex
+      '23': 'https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Hígado y Vesícula
+      '24': 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Alivgast Cápsulas
+      '25': 'https://images.unsplash.com/photo-1602503799142-e31ba78a0e80?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Melena de León
+      '26': 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Cholesterol Decrease
+      '27': 'https://images.unsplash.com/photo-1610308866249-54a9d90d0e91?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Vitex and Maca
+      '28': 'https://images.unsplash.com/photo-1516594798947-e65505dbb29d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Ajo Negro
+      '29': 'https://images.unsplash.com/photo-1569427433168-b8bf27ed4b23?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Ácido Úrico
+      '30': 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Baixar Pes
+      '31': 'https://images.unsplash.com/photo-1550792743-c9da17f77eac?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Cordyceps
+      '32': 'https://images.unsplash.com/photo-1593095948071-474c5cc2989d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Contdiabet
+      '33': 'https://images.unsplash.com/photo-1593075631564-af0bdaaf98d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Reishi
+      '34': 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Ladocan
+      '35': 'https://images.unsplash.com/photo-1526736330106-96fc65a4ac57?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Care Kidneys
+      '36': 'https://images.unsplash.com/photo-1586254331156-4d4ca46b9e1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Citrato de Magnesio
+      '37': 'https://images.unsplash.com/photo-1608664547613-d9fdaa5c2d9f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Cúrcuma + Pimienta
+      
+      // LÍQUIDOS
+      '38': 'https://images.unsplash.com/photo-1604719312566-8912e9227c6a?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Alivgast Líquido
+      '39': 'https://images.unsplash.com/photo-1611689342806-0863700ce1e4?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Circuvaric
+      '40': 'https://images.unsplash.com/photo-1607613022516-acf87ec5e8dc?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Relaksim
+      '41': 'https://images.unsplash.com/photo-1609205851270-e3a9be32e9ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Dolopian
+      
+      // CREMAS
+      '42': 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Antiarrugas
+      '43': 'https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Gel Reafirmante
+      '44': 'https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Sérum Acné
+      '45': 'https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Peeling Químico
+      '46': 'https://images.unsplash.com/photo-1612817288484-6661b1b88949?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Crema Despigmentadora
+      '47': 'https://images.unsplash.com/photo-1608248543925-0c8b4dbaf329?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Contorno de Ojos
+      
+      // JABONES ARTESANALES
+      '48': 'https://images.unsplash.com/photo-1600857544200-a6be9e-3c32?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Jabón Romero
+      '49': 'https://images.unsplash.com/photo-1617103996702-96ff29b1c467?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Jabón Anticaída
+      '50': 'https://images.unsplash.com/photo-1585838062925-03b52b5cbfb4?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Jabón Avena y Miel
+      '51': 'https://images.unsplash.com/photo-1600857544200-a6be9e7b6987?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Jabón Carbón Activado
+      '52': 'https://images.unsplash.com/photo-1578916171728-46686eac8d58?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Jabón Naranja y Café
+      '53': 'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Jabón Arroz
+      '54': 'https://images.unsplash.com/photo-1602694595691-fa19b2f90db3?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Jabón Lavanda
+      '55': 'https://images.unsplash.com/photo-1617103996816-c04e8549e97a?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Jabón Azufre
+      '56': 'https://images.unsplash.com/photo-1588260739738-c3a43e2b35f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Jabón Perejil
+      '57': 'https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Jabón Reductor
+      '58': 'https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Jabón Arcilla
+      '59': 'https://images.unsplash.com/photo-1578916171728-46686eac8d58?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Jabón Caléndula
+      '60': 'https://images.unsplash.com/photo-1617103996702-96ff29b1c467?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80', // Jabón Algas Marinas
+      '61': 'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80'  // Jabón Ruda
     };
-    return images[id] || 'https://images.unsplash.com/photo-1593095948071-474c5cc2989d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80';
+    return images[id] || 'https://images.unsplash.com/photo-1601132359864-c974e79890ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80';
   }
 }

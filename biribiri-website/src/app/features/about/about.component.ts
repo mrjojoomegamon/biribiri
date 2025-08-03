@@ -38,7 +38,7 @@ import { ButtonComponent } from '../../shared/components/button/button.component
           <div class="relative">
             <div class="relative z-10">
               <img 
-                src="https://via.placeholder.com/500x600/2a2a2a/e31e24?text=FOTO+PROFESIONAL" 
+                src="/assets/images/profile-photo.jpg" 
                 alt="Fisioterapeuta especialista"
                 class="w-full max-w-md mx-auto rounded-lg shadow-card">
             </div>
@@ -358,17 +358,23 @@ import { ButtonComponent } from '../../shared/components/button/button.component
               <span class="text-text-secondary text-sm">5.0/5</span>
             </div>
             <p class="text-text-secondary mb-6 italic leading-relaxed">
-              "Después de 6 meses lesionado, en 8 semanas estaba de vuelta en el campo. 
-              Su enfoque científico y personalizado marca la diferencia."
+              "Los resultados hablan por sí solos. Con la metodología y productos de BIRIBIRI, 
+              logré la transformación que buscaba. Completamente recomendado."
             </p>
             <div class="flex items-center">
-              <img 
-                src="https://via.placeholder.com/50x50/e31e24/ffffff?text=CM" 
-                alt="Carlos Martínez"
-                class="w-12 h-12 rounded-full mr-4">
+              <div class="flex space-x-2 mr-4">
+                <img 
+                  src="/assets/images/person1-before.jpg" 
+                  alt="Antes"
+                  class="w-12 h-12 rounded-lg object-cover">
+                <img 
+                  src="/assets/images/person1-after.jpg" 
+                  alt="Después"
+                  class="w-12 h-12 rounded-lg object-cover">
+              </div>
               <div>
-                <div class="font-bold text-text-primary">Carlos Martínez</div>
-                <div class="text-sm text-text-secondary">Futbolista Profesional</div>
+                <div class="font-bold text-text-primary">Cliente Transformado</div>
+                <div class="text-sm text-text-secondary">Antes y Después</div>
               </div>
             </div>
           </div>
@@ -381,17 +387,23 @@ import { ButtonComponent } from '../../shared/components/button/button.component
               <span class="text-text-secondary text-sm">5.0/5</span>
             </div>
             <p class="text-text-secondary mb-6 italic leading-relaxed">
-              "No solo me recuperé, sino que ahora corro más rápido que antes de la lesión. 
-              Su metodología es simplemente excepcional."
+              "Increíble transformación en pocos meses. Los suplementos y el plan personalizado 
+              realmente funcionan. ¡Estoy muy satisfecha con los resultados!"
             </p>
             <div class="flex items-center">
-              <img 
-                src="https://via.placeholder.com/50x50/e31e24/ffffff?text=LG" 
-                alt="Laura García"
-                class="w-12 h-12 rounded-full mr-4">
+              <div class="flex space-x-2 mr-4">
+                <img 
+                  src="/assets/images/woman1-before.jpg" 
+                  alt="Antes"
+                  class="w-12 h-12 rounded-lg object-cover">
+                <img 
+                  src="/assets/images/woman1-after.jpg" 
+                  alt="Después"
+                  class="w-12 h-12 rounded-lg object-cover">
+              </div>
               <div>
-                <div class="font-bold text-text-primary">Laura García</div>
-                <div class="text-sm text-text-secondary">Maratonista Elite</div>
+                <div class="font-bold text-text-primary">Cliente Satisfecha</div>
+                <div class="text-sm text-text-secondary">Transformación Real</div>
               </div>
             </div>
           </div>
@@ -404,17 +416,17 @@ import { ButtonComponent } from '../../shared/components/button/button.component
               <span class="text-text-secondary text-sm">5.0/5</span>
             </div>
             <p class="text-text-secondary mb-6 italic leading-relaxed">
-              "Un profesional excepcional. Me ayudó a entender mi cuerpo y a prevenir 
-              futuras lesiones. Altamente recomendado."
+              "La diferencia es notable. Siguiendo el programa de BIRIBIRI conseguí 
+              los cambios que llevaba años buscando. Excelente asesoramiento."
             </p>
             <div class="flex items-center">
               <img 
-                src="https://via.placeholder.com/50x50/e31e24/ffffff?text=MR" 
-                alt="Miguel Rodríguez"
-                class="w-12 h-12 rounded-full mr-4">
+                src="/assets/images/person2-before-after.jpg" 
+                alt="Antes y Después"
+                class="w-16 h-12 rounded-lg object-cover mr-4">
               <div>
-                <div class="font-bold text-text-primary">Miguel Rodríguez</div>
-                <div class="text-sm text-text-secondary">Crossfit Atleta</div>
+                <div class="font-bold text-text-primary">Resultado Verificado</div>
+                <div class="text-sm text-text-secondary">Programa Completo</div>
               </div>
             </div>
           </div>
