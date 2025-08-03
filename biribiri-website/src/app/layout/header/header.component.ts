@@ -10,9 +10,11 @@ import { ButtonComponent } from '../../shared/components/button/button.component
   template: `
     <header class="fixed top-0 w-full bg-black z-50 shadow-lg">
       <!-- Promotional Banner -->
-      <div class="bg-gradient-to-r from-accent to-accent-hover text-center py-3">
+      <div class="text-center py-3"
+           [style.background]="'linear-gradient(to right, var(--accent), var(--accent-hover))'">
         <div class="max-w-container mx-auto px-4">
-          <span class="text-lg font-black uppercase tracking-widest">
+          <span class="text-lg font-black uppercase tracking-widest"
+                [style.color]="'var(--text-primary)'">
             🔥 NUEVA LÍNEA DE SUPLEMENTOS DISPONIBLE
           </span>
           <app-button 
@@ -30,7 +32,7 @@ import { ButtonComponent } from '../../shared/components/button/button.component
         <div class="flex items-center">
           <a routerLink="/" class="flex items-center hover:opacity-80 transition-opacity">
             <img 
-              src="/assets/images/logo.jpg" 
+              src="assets/images/logo.jpg" 
               alt="BIRIBIRI Logo"
               class="h-12 w-auto mr-3">
             <span class="text-3xl font-black tracking-wider text-text-primary hover:text-accent transition-colors">
@@ -74,11 +76,31 @@ import { ButtonComponent } from '../../shared/components/button/button.component
           </a>
         </div>
 
+        <!-- Color Test Button (Always Visible) -->
+        <button 
+          (click)="toggleColorTheme()"
+          class="md:hidden fixed top-4 right-4 z-50 px-3 py-2 text-xs font-bold uppercase tracking-wider rounded-full border-2 transition-all duration-300 shadow-lg"
+          [style.background-color]="isBlueTheme ? '#00bff3' : '#e31e24'"
+          [style.border-color]="isBlueTheme ? '#00bff3' : '#e31e24'"
+          style="color: white;">
+          {{ isBlueTheme ? '🔵' : '🔴' }}
+        </button>
+
         <!-- CTA -->
         <div class="hidden md:flex items-center space-x-4">
+          <!-- Color Test Button Desktop -->
+          <button 
+            (click)="toggleColorTheme()"
+            class="px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-full border-2 transition-all duration-300 shadow-lg hover:scale-105"
+            [style.background-color]="isBlueTheme ? '#00bff3' : '#e31e24'"
+            [style.border-color]="isBlueTheme ? '#00bff3' : '#e31e24'"
+            style="color: white;">
+            {{ isBlueTheme ? '🔵 AZUL' : '🔴 ROJO' }}
+          </button>
+          
           <div class="text-right">
             <div class="text-sm text-text-secondary">Agenda tu cita</div>
-            <div class="text-lg font-bold text-accent">+52 55 7426 4946</div>
+            <div class="text-lg font-bold" style="color: var(--accent)">+52 55 7426 4946</div>
           </div>
           <app-button routerLink="/contacto">
             RESERVAR CITA
@@ -151,8 +173,27 @@ import { ButtonComponent } from '../../shared/components/button/button.component
 })
 export class HeaderComponent {
   mobileMenuOpen = false;
+  isBlueTheme = false;
 
   toggleMobileMenu(): void {
     this.mobileMenuOpen = !this.mobileMenuOpen;
+  }
+
+  toggleColorTheme(): void {
+    this.isBlueTheme = !this.isBlueTheme;
+    
+    if (this.isBlueTheme) {
+      // Cambiar a tema azul #00bff3
+      document.documentElement.style.setProperty('--accent', '#00bff3');
+      document.documentElement.style.setProperty('--accent-hover', '#0095c7');
+      document.documentElement.style.setProperty('--accent-rgb', '0, 191, 243');
+      document.documentElement.style.setProperty('--text-highlight', '#00bff3');
+    } else {
+      // Volver al tema rojo original #e31e24
+      document.documentElement.style.setProperty('--accent', '#e31e24');
+      document.documentElement.style.setProperty('--accent-hover', '#c41e24');
+      document.documentElement.style.setProperty('--accent-rgb', '227, 30, 36');
+      document.documentElement.style.setProperty('--text-highlight', '#ffd700');
+    }
   }
 }

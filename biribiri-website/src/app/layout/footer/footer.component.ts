@@ -15,7 +15,7 @@ import { RouterModule } from '@angular/router';
           <div class="md:col-span-2">
             <div class="flex items-center mb-4">
               <img 
-                src="/assets/images/logo.jpg" 
+                src="assets/images/logo.jpg" 
                 alt="BIRIBIRI Logo"
                 class="h-10 w-auto mr-3">
               <h3 class="text-2xl font-black tracking-wider text-text-primary">

@@ -15,7 +15,7 @@ export class DataService {
       price: 120,
       duration: 60,
       category: 'sports',
-      image: '/assets/images/sports-therapy.jpg'
+      image: 'assets/images/sports-therapy.jpg'
     },
     {
       id: '2',
@@ -24,7 +24,7 @@ export class DataService {
       price: 100,
       duration: 45,
       category: 'rehabilitation',
-      image: '/assets/images/rehabilitation.jpg'
+      image: 'assets/images/rehabilitation.jpg'
     },
     {
       id: '3',
@@ -33,7 +33,7 @@ export class DataService {
       price: 80,
       duration: 30,
       category: 'wellness',
-      image: '/assets/images/wellness.jpg'
+      image: 'assets/images/wellness.jpg'
     }
   ];
 
@@ -45,7 +45,7 @@ export class DataService {
       description: 'Propiedades antibacterianas. Antioxidante. Acelera la curación de heridas. Alivia la inflamación. Fortalece el sistema inmunológico.',
       price: 95,
       category: 'oils',
-      image: '/assets/images/cinnamon-oil.jpg',
+      image: 'assets/images/cinnamon-oil.jpg',
       inStock: true,
       rating: 4.8,
       reviews: 45
@@ -56,7 +56,7 @@ export class DataService {
       description: 'Combate resfriados, bronquitis, asma. Antiséptico. Repelente de insectos. Reduce la ansiedad y el estrés.',
       price: 75,
       category: 'oils',
-      image: '/assets/images/pine-oil.jpg',
+      image: 'assets/images/pine-oil.jpg',
       inStock: true,
       rating: 4.7,
       reviews: 32
@@ -67,7 +67,7 @@ export class DataService {
       description: 'Reduce los niveles de estrés. Crea un ambiente tranquilo y sereno. Alivia la piel irritada. Controla el acné. Analgésico.',
       price: 175,
       category: 'oils',
-      image: '/assets/images/bergamot-oil.jpg',
+      image: 'assets/images/bergamot-oil.jpg',
       inStock: true,
       rating: 4.9,
       reviews: 68
@@ -78,7 +78,7 @@ export class DataService {
       description: 'Ayuda a limpiar el cabello. Nutre el cuero cabelludo. Antiinflamatorio. Analgésico. Mejora la memoria y la concentración.',
       price: 85,
       category: 'oils',
-      image: '/assets/images/rosemary-oil.jpg',
+      image: 'assets/images/rosemary-oil.jpg',
       inStock: true,
       rating: 4.6,
       reviews: 41
@@ -89,7 +89,7 @@ export class DataService {
       description: 'Eleva el estado de ánimo. Ayuda a perder peso. Desintoxicante del organismo. Mejora la apariencia de la piel.',
       price: 95,
       category: 'oils',
-      image: '/assets/images/grapefruit-oil.jpg',
+      image: 'assets/images/grapefruit-oil.jpg',
       inStock: true,
       rating: 4.5,
       reviews: 29
@@ -100,7 +100,7 @@ export class DataService {
       description: 'Equilibra el sistema digestivo. Vigorizante. Antiespasmódico. Calma la irritación de la piel.',
       price: 85,
       category: 'oils',
-      image: '/assets/images/star-anise-oil.jpg',
+      image: 'assets/images/star-anise-oil.jpg',
       inStock: true,
       rating: 4.4,
       reviews: 26
@@ -111,7 +111,7 @@ export class DataService {
       description: 'Mejora el estado de ánimo. Digestivo. Desintoxicante y purificante. Antiinflamatorio. Combate los estados gripales.',
       price: 105,
       category: 'oils',
-      image: '/assets/images/lemon-oil.jpg',
+      image: 'assets/images/lemon-oil.jpg',
       inStock: true,
       rating: 4.8,
       reviews: 87
@@ -122,7 +122,7 @@ export class DataService {
       description: 'Calma las picaduras de insectos, quemaduras menores y piel seca. Elimina la intranquilidad. Promueve el sueño tranquilo.',
       price: 175,
       category: 'oils',
-      image: '/assets/images/lavender-oil.jpg',
+      image: 'assets/images/lavender-oil.jpg',
       inStock: true,
       rating: 4.9,
       reviews: 156
@@ -133,7 +133,7 @@ export class DataService {
       description: 'Reduce las náuseas. Antiinflamatorio. Ayuda a problemas digestivos. Da sensación equilibrada.',
       price: 205,
       category: 'oils',
-      image: '/assets/images/ginger-oil.jpg',
+      image: 'assets/images/ginger-oil.jpg',
       inStock: true,
       rating: 4.7,
       reviews: 73
@@ -144,7 +144,7 @@ export class DataService {
       description: 'Respaldo para el bienestar estomacal y digestivos. Preserva el bienestar bucal. Alivia el estrés y fomenta la paz interior.',
       price: 100,
       category: 'oils',
-      image: '/assets/images/mint-oil.jpg',
+      image: 'assets/images/mint-oil.jpg',
       inStock: true,
       rating: 4.6,
       reviews: 94
@@ -155,7 +155,7 @@ export class DataService {
       description: 'Elimina gases. Evita infecciones. Antiinflamatorio. Combate el malestar físico bucal.',
       price: 80,
       category: 'oils',
-      image: '/assets/images/clove-oil.jpg',
+      image: 'assets/images/clove-oil.jpg',
       inStock: true,
       rating: 4.5,
       reviews: 38
@@ -166,7 +166,7 @@ export class DataService {
       description: 'Alivia la congestión. Abre las vías respiratorias. Limpiadora y desinfectante. Promueve la relajación.',
       price: 65,
       category: 'oils',
-      image: '/assets/images/eucalyptus-oil.jpg',
+      image: 'assets/images/eucalyptus-oil.jpg',
       inStock: true,
       rating: 4.7,
       reviews: 62
@@ -177,7 +177,7 @@ export class DataService {
       description: 'Mejora estado de ánimo. Promueve sentimiento de felicidad y optimismo. Antioxidante. Favorece la digestión.',
       price: 60,
       category: 'oils',
-      image: '/assets/images/orange-oil.jpg',
+      image: 'assets/images/orange-oil.jpg',
       inStock: true,
       rating: 4.6,
       reviews: 52
@@ -188,7 +188,7 @@ export class DataService {
       description: 'Alivia la ansiedad y el estrés. Calma la mente. Tonifica y limpia la piel. Aumenta la confianza en uno mismo.',
       price: 150,
       category: 'oils',
-      image: '/assets/images/sandalwood-oil.jpg',
+      image: 'assets/images/sandalwood-oil.jpg',
       inStock: true,
       rating: 4.8,
       reviews: 41
@@ -199,7 +199,7 @@ export class DataService {
       description: 'Apoya al sistema inmune. Combate amenazas ambientales. Alivia la tensión muscular. Mejora la concentración.',
       price: 80,
       category: 'oils',
-      image: '/assets/images/thyme-oil.jpg',
+      image: 'assets/images/thyme-oil.jpg',
       inStock: true,
       rating: 4.5,
       reviews: 33
@@ -210,7 +210,7 @@ export class DataService {
       description: 'Alivia la picazón e irritación. Ayuda al sistema inmune. Previene malestares general del cuerpo. Mantiene el pelo en óptimas condiciones.',
       price: 85,
       category: 'oils',
-      image: '/assets/images/tea-tree-oil.jpg',
+      image: 'assets/images/tea-tree-oil.jpg',
       inStock: true,
       rating: 4.7,
       reviews: 89
@@ -221,7 +221,7 @@ export class DataService {
       description: 'Propiedades relajantes. Ayuda a aliviar las tensiones musculares. Equilibra el sistema digestivo. Promueve sensación de calma.',
       price: 95,
       category: 'oils',
-      image: '/assets/images/spearmint-oil.jpg',
+      image: 'assets/images/spearmint-oil.jpg',
       inStock: true,
       rating: 4.6,
       reviews: 42
@@ -232,7 +232,7 @@ export class DataService {
       description: 'Alivia las molestias de las vías respiratorias. Reduce la tos y la flema. Despeja las vías respiratorias.',
       price: 175,
       category: 'oils',
-      image: '/assets/images/cough-oil.jpg',
+      image: 'assets/images/cough-oil.jpg',
       inStock: true,
       rating: 4.8,
       reviews: 67
@@ -243,7 +243,7 @@ export class DataService {
       description: 'Combate el estrés y el cansancio. Ayuda a dormir. Te relaja.',
       price: 175,
       category: 'oils',
-      image: '/assets/images/relaxation-oil.jpg',
+      image: 'assets/images/relaxation-oil.jpg',
       inStock: true,
       rating: 4.9,
       reviews: 89
@@ -254,7 +254,7 @@ export class DataService {
       description: 'Engrosa el cabello. Elimina la caspa. Estimula el flujo sanguíneo.',
       price: 175,
       category: 'oils',
-      image: '/assets/images/hair-oil.jpg',
+      image: 'assets/images/hair-oil.jpg',
       inStock: true,
       rating: 4.7,
       reviews: 56
@@ -267,7 +267,7 @@ export class DataService {
       description: 'Forma y repara el cartílago. Proporciona elasticidad al cartílago. Disminuye el dolor articular. Antiinflamatorio. Contiene: Glucosamina, Condroitina, Harpagofito, Colágeno.',
       price: 250,
       category: 'capsules',
-      image: '/assets/images/glucosamine.jpg',
+      image: 'assets/images/glucosamine.jpg',
       inStock: true,
       rating: 4.8,
       reviews: 78
@@ -278,7 +278,7 @@ export class DataService {
       description: 'Control de estrés. Brinda energía. Nootrópico. Sueño reparador. Claridad mental. Mayor concentración, rendimiento y resistencia.',
       price: 190,
       category: 'capsules',
-      image: '/assets/images/mushroom-complex.jpg',
+      image: 'assets/images/mushroom-complex.jpg',
       inStock: true,
       rating: 4.9,
       reviews: 123
@@ -289,7 +289,7 @@ export class DataService {
       description: 'Ayuda en la desintoxicación del hígado. Repara y regenera el hígado. Ayuda a la digestión de las grasas. Combate piedras y lodo en la vesícula. Contiene: Cardo Mariano, Alcachofa, Diente de León.',
       price: 195,
       category: 'capsules',
-      image: '/assets/images/liver-support.jpg',
+      image: 'assets/images/liver-support.jpg',
       inStock: true,
       rating: 4.7,
       reviews: 65
@@ -300,7 +300,7 @@ export class DataService {
       description: 'Alivia la gastritis y las úlceras gástricas. Combate el reflujo y la inflamación abdominal. Disminuye el ardor en la boca del estómago. Contiene: Fenogreco, Cuachalalate, Hinojo, Manzanilla.',
       price: 165,
       category: 'capsules',
-      image: '/assets/images/stomach-support.jpg',
+      image: 'assets/images/stomach-support.jpg',
       inStock: true,
       rating: 4.6,
       reviews: 89
@@ -311,7 +311,7 @@ export class DataService {
       description: 'Claridad mental. Combate el Alzheimer. Evita la ansiedad y la depresión. Combate la demencia senil.',
       price: 250,
       category: 'capsules',
-      image: '/assets/images/lions-mane.jpg',
+      image: 'assets/images/lions-mane.jpg',
       inStock: true,
       rating: 4.9,
       reviews: 145
@@ -322,7 +322,7 @@ export class DataService {
       description: 'Auxiliar en la desintoxicación del hígado y la sangre. Disminuye el colesterol malo y los triglicéridos. Ayuda a la salud cardiovascular. Contiene: Reishi, Moringa, Cardo Mariano, Boldo.',
       price: 150,
       category: 'capsules',
-      image: '/assets/images/cholesterol.jpg',
+      image: 'assets/images/cholesterol.jpg',
       inStock: true,
       rating: 4.5,
       reviews: 67
@@ -333,7 +333,7 @@ export class DataService {
       description: 'Alternativa natural para la menopausia. Aporta energía. Combate los bochornos. Mejora densidad ósea. Contiene: Vitamina C, Coenzima Q10, Ginseng, Vitex, Maca.',
       price: 195,
       category: 'capsules',
-      image: '/assets/images/womens-health.jpg',
+      image: 'assets/images/womens-health.jpg',
       inStock: true,
       rating: 4.7,
       reviews: 92
@@ -344,7 +344,7 @@ export class DataService {
       description: 'Previene diferentes tipos de cáncer. Previene la hipertensión. Ayuda a los estados de estrés, cansancio, fatiga, nerviosismo. Aliado contra el Parkinson. Es un antioxidante depurativo.',
       price: 220,
       category: 'capsules',
-      image: '/assets/images/black-garlic.jpg',
+      image: 'assets/images/black-garlic.jpg',
       inStock: true,
       rating: 4.8,
       reviews: 76
@@ -355,7 +355,7 @@ export class DataService {
       description: 'Alivia la gota y disminuye el exceso de ácido úrico. Auxiliar en el dolor pulsátil, rigidez en las articulaciones, enrojecimiento y la hinchazón. Contiene: Moringa, Diente de León, Cúrcuma.',
       price: 185,
       category: 'capsules',
-      image: '/assets/images/uric-acid.jpg',
+      image: 'assets/images/uric-acid.jpg',
       inStock: true,
       rating: 4.6,
       reviews: 54
@@ -366,7 +366,7 @@ export class DataService {
       description: 'Ayuda a quemar la grasa en el cuerpo. Reduce el apetito. Ideal para personas con sobrepeso. Incrementa la quema calórica. Contiene: Raíz de Tejocote, Reishi, Jengibre, Moringa.',
       price: 200,
       category: 'capsules',
-      image: '/assets/images/weight-loss.jpg',
+      image: 'assets/images/weight-loss.jpg',
       inStock: true,
       rating: 4.4,
       reviews: 112
@@ -377,7 +377,7 @@ export class DataService {
       description: 'Ayuda a tener mayor rendimiento y energía. Es un potente antienvejecimiento. Vigorizante sexual. Estimula el sistema inmune. Favorece el control del azúcar en sangre.',
       price: 220,
       category: 'capsules',
-      image: '/assets/images/cordyceps.jpg',
+      image: 'assets/images/cordyceps.jpg',
       inStock: true,
       rating: 4.8,
       reviews: 98
@@ -388,7 +388,7 @@ export class DataService {
       description: 'Reduce la glucosa en sangre. Aumenta los niveles de insulina. Contiene: Moringa, Canela, Picolinato de Cromo, Reishi.',
       price: 165,
       category: 'capsules',
-      image: '/assets/images/diabetes-support.jpg',
+      image: 'assets/images/diabetes-support.jpg',
       inStock: true,
       rating: 4.7,
       reviews: 87
@@ -399,7 +399,7 @@ export class DataService {
       description: 'Reforzar el sistema inmunológico. Tratar la fatiga. Reduce el colesterol elevado y la presión arterial. Aumenta la fuerza y la resistencia. Previene o trata el cáncer.',
       price: 200,
       category: 'capsules',
-      image: '/assets/images/reishi.jpg',
+      image: 'assets/images/reishi.jpg',
       inStock: true,
       rating: 4.9,
       reviews: 134
@@ -410,7 +410,7 @@ export class DataService {
       description: 'Combate la anemia. Desintoxica la sangre. Elimina radicales libres. Ayuda a eliminar problemas digestivos. Pérdida de peso involuntaria. Contiene: Zarzaparrilla, Muicle, Sanguinaria.',
       price: 155,
       category: 'capsules',
-      image: '/assets/images/blood-detox.jpg',
+      image: 'assets/images/blood-detox.jpg',
       inStock: true,
       rating: 4.5,
       reviews: 43
@@ -421,7 +421,7 @@ export class DataService {
       description: 'Ayuda a eliminar el líquido retenido. Combate la inflamación de los riñones. Elimina los cálculos renales y de la vejiga. Contiene: Rompepiedras, Rábano Negro, Cola de Caballo, Palo Azul.',
       price: 175,
       category: 'capsules',
-      image: '/assets/images/kidney-support.jpg',
+      image: 'assets/images/kidney-support.jpg',
       inStock: true,
       rating: 4.6,
       reviews: 71
@@ -432,7 +432,7 @@ export class DataService {
       description: 'Trata el estreñimiento a corto plazo. Ayuda en la relajación y a dormir. Controla la presión arterial. Regula los niveles de azúcar en sangre. Favorece la salud de los huesos y los músculos.',
       price: 250,
       category: 'capsules',
-      image: '/assets/images/magnesium.jpg',
+      image: 'assets/images/magnesium.jpg',
       inStock: true,
       rating: 4.8,
       reviews: 156
@@ -443,7 +443,7 @@ export class DataService {
       description: 'Antiinflamatorio. Ayuda en la pérdida de peso. Antioxidante. La pimienta negra ayuda a una absorción más rápida de la cúrcuma.',
       price: 190,
       category: 'capsules',
-      image: '/assets/images/turmeric-pepper.jpg',
+      image: 'assets/images/turmeric-pepper.jpg',
       inStock: true,
       rating: 4.7,
       reviews: 89
@@ -456,7 +456,7 @@ export class DataService {
       description: 'Alivia la gastritis y las úlceras gástricas. Combate el reflujo y la inflamación abdominal. Disminuye el ardor en la boca del estómago. Contiene: Albahaca, Regaliz, Bicarbonato de Sodio, Hoja Sen. 250ml.',
       price: 140,
       category: 'liquids',
-      image: '/assets/images/alivgast-liquid.jpg',
+      image: 'assets/images/alivgast-liquid.jpg',
       inStock: true,
       rating: 4.6,
       reviews: 67
@@ -467,7 +467,7 @@ export class DataService {
       description: 'Mejoran las varices, la sensación de pesadez, cansancio y dolor en las piernas. Favorece la circulación sanguínea. Combate las hemorroides. Contiene: Castaño de Indias, Hamamelis, Romero. 60ml.',
       price: 110,
       category: 'liquids',
-      image: '/assets/images/circuvaric.jpg',
+      image: 'assets/images/circuvaric.jpg',
       inStock: true,
       rating: 4.5,
       reviews: 45
@@ -478,7 +478,7 @@ export class DataService {
       description: 'Elimina el estrés, ayuda a dormir, combate la ansiedad y el nerviosismo. Contiene: Ginseng, Pasiflora, Flor de Manita, Valeriana. 60ml.',
       price: 70,
       category: 'liquids',
-      image: '/assets/images/relaksim.jpg',
+      image: 'assets/images/relaksim.jpg',
       inStock: true,
       rating: 4.7,
       reviews: 78
@@ -489,7 +489,7 @@ export class DataService {
       description: 'Alivia el dolor. Desinflama los músculos. Actúa sobre las fibras nerviosas del cuerpo. Contiene: Lidocaína, Árnica, Hoja Santa, Menta. 60ml. Uso tópico.',
       price: 70,
       category: 'liquids',
-      image: '/assets/images/dolopian.jpg',
+      image: 'assets/images/dolopian.jpg',
       inStock: true,
       rating: 4.8,
       reviews: 94
@@ -502,7 +502,7 @@ export class DataService {
       description: 'Reduce líneas de expresión y arrugas. Hidrata profundamente la piel. Estimula la producción de colágeno. 50g.',
       price: 150,
       category: 'creams',
-      image: '/assets/images/anti-aging-cream.jpg',
+      image: 'assets/images/anti-aging-cream.jpg',
       inStock: true,
       rating: 4.6,
       reviews: 67
@@ -513,7 +513,7 @@ export class DataService {
       description: 'Reafirma y tonifica la piel. Reduce medidas y celulitis. Mejora la elasticidad cutánea. 250ml.',
       price: 170,
       category: 'creams',
-      image: '/assets/images/reducing-gel.jpg',
+      image: 'assets/images/reducing-gel.jpg',
       inStock: true,
       rating: 4.5,
       reviews: 89
@@ -524,7 +524,7 @@ export class DataService {
       description: 'Controla la producción de grasa. Reduce inflamación del acné. Previene nuevos brotes. 60ml.',
       price: 110,
       category: 'creams',
-      image: '/assets/images/acne-serum.jpg',
+      image: 'assets/images/acne-serum.jpg',
       inStock: true,
       rating: 4.7,
       reviews: 123
@@ -535,7 +535,7 @@ export class DataService {
       description: 'Exfolia la piel profundamente. Renueva células muertas. Mejora textura y luminosidad. 30ml.',
       price: 150,
       category: 'creams',
-      image: '/assets/images/chemical-peeling.jpg',
+      image: 'assets/images/chemical-peeling.jpg',
       inStock: true,
       rating: 4.4,
       reviews: 34
@@ -546,7 +546,7 @@ export class DataService {
       description: 'Reduce manchas y hiperpigmentación. Unifica el tono de la piel. Previene nuevas manchas. 50ml.',
       price: 150,
       category: 'creams',
-      image: '/assets/images/depigmenting-cream.jpg',
+      image: 'assets/images/depigmenting-cream.jpg',
       inStock: true,
       rating: 4.6,
       reviews: 78
@@ -557,7 +557,7 @@ export class DataService {
       description: 'Reduce ojeras y bolsas. Previene líneas de expresión. Hidrata la zona delicada del contorno. 10ml.',
       price: 110,
       category: 'creams',
-      image: '/assets/images/eye-contour.jpg',
+      image: 'assets/images/eye-contour.jpg',
       inStock: true,
       rating: 4.8,
       reviews: 156
@@ -570,7 +570,7 @@ export class DataService {
       description: 'Antiinflamatorio. Exfoliante. Antiacné. Hidratante. Antiarruga. Contiene: Extracto de Romero, Aceite de Romero.',
       price: 20,
       category: 'soaps',
-      image: '/assets/images/rosemary-soap.jpg',
+      image: 'assets/images/rosemary-soap.jpg',
       inStock: true,
       rating: 4.5,
       reviews: 67
@@ -581,7 +581,7 @@ export class DataService {
       description: 'Mejora la circulación. Rehidrata el cuero cabelludo. Elimina el exceso de grasa en el pelo. Da fortaleza al cabello. Contiene: Extractos de Ortiga, Romero, Aloe, Aceites de Romero y Manzanilla.',
       price: 20,
       category: 'soaps',
-      image: '/assets/images/hair-loss-soap.jpg',
+      image: 'assets/images/hair-loss-soap.jpg',
       inStock: true,
       rating: 4.6,
       reviews: 89
@@ -592,7 +592,7 @@ export class DataService {
       description: 'Para la piel sensible y seca. Hidratante. Calmante. Antiséptica. Piel con psoriasis. Contiene: Avena, Miel, Aceite de Jojoba.',
       price: 20,
       category: 'soaps',
-      image: '/assets/images/oatmeal-honey-soap.jpg',
+      image: 'assets/images/oatmeal-honey-soap.jpg',
       inStock: true,
       rating: 4.7,
       reviews: 123
@@ -603,7 +603,7 @@ export class DataService {
       description: 'Limpia de manera profunda. Da luminosidad a la piel. Elimina la grasa. No más espinillas ni puntos negros. Contiene: Carbón Activado, Alantoína, Aceite de Lavanda, Aceite de Árbol del Té.',
       price: 20,
       category: 'soaps',
-      image: '/assets/images/charcoal-soap.jpg',
+      image: 'assets/images/charcoal-soap.jpg',
       inStock: true,
       rating: 4.8,
       reviews: 145
@@ -614,7 +614,7 @@ export class DataService {
       description: 'Mejora la circulación. Antioxidante. Hidratante. Reafirmante. Elimina la celulitis. Contiene: Café, Manteca de Cacao, Cáscara de Naranja, Miel.',
       price: 20,
       category: 'soaps',
-      image: '/assets/images/orange-coffee-soap.jpg',
+      image: 'assets/images/orange-coffee-soap.jpg',
       inStock: true,
       rating: 4.5,
       reviews: 78
@@ -625,7 +625,7 @@ export class DataService {
       description: 'Rejuvenece la piel. Hidrata. Combate el envejecimiento. Despigmenta la piel. Contiene: Aceite de Coco, Arroz, Vitamina E, Gel de Aloe.',
       price: 20,
       category: 'soaps',
-      image: '/assets/images/rice-soap.jpg',
+      image: 'assets/images/rice-soap.jpg',
       inStock: true,
       rating: 4.6,
       reviews: 92
@@ -636,7 +636,7 @@ export class DataService {
       description: 'Relajante. Antiséptico. Antiinflamatorio. Contra las quemaduras y afecciones cutáneas. Contiene: Extracto de Lavanda, Aceite de Romero, Aceite de Lavanda.',
       price: 20,
       category: 'soaps',
-      image: '/assets/images/lavender-soap.jpg',
+      image: 'assets/images/lavender-soap.jpg',
       inStock: true,
       rating: 4.9,
       reviews: 167
@@ -647,7 +647,7 @@ export class DataService {
       description: 'Combate el acné y pieles grasas. Antiinflamatorio. Contra la rosácea. Contiene: Aceite de Árbol del Té, Azufre.',
       price: 20,
       category: 'soaps',
-      image: '/assets/images/sulfur-soap.jpg',
+      image: 'assets/images/sulfur-soap.jpg',
       inStock: true,
       rating: 4.4,
       reviews: 56
@@ -658,7 +658,7 @@ export class DataService {
       description: 'Aclarante. Elimina las manchas de la piel. Mejora la circulación. Antiinflamatorio. Contiene: Extracto de Té Verde y Perejil, Leche en Polvo, Avena, Miel.',
       price: 20,
       category: 'soaps',
-      image: '/assets/images/parsley-soap.jpg',
+      image: 'assets/images/parsley-soap.jpg',
       inStock: true,
       rating: 4.7,
       reviews: 89
@@ -669,7 +669,7 @@ export class DataService {
       description: 'Incrementa el gasto energético. Disminuye tejido graso. Da firmeza a la piel. Evita flacidez. Elimina celulitis. Contiene: Algas Marinas, Extracto de Hiedra, Avena, Café, Aceite de Coco.',
       price: 20,
       category: 'soaps',
-      image: '/assets/images/reducing-soap.jpg',
+      image: 'assets/images/reducing-soap.jpg',
       inStock: true,
       rating: 4.3,
       reviews: 34
@@ -680,7 +680,7 @@ export class DataService {
       description: 'Combate el exceso de grasa en piel y cabello. Elimina toxinas y células muertas. Antiséptico. Contiene: Arcilla, Aceite de Árbol del Té.',
       price: 20,
       category: 'soaps',
-      image: '/assets/images/clay-soap.jpg',
+      image: 'assets/images/clay-soap.jpg',
       inStock: true,
       rating: 4.6,
       reviews: 123
@@ -691,7 +691,7 @@ export class DataService {
       description: 'Antiinflamatorio. Forma nuevos tejidos. Cicatrizante. Combate la rosácea, psoriasis, piel atópica y sensible. Contiene: Extracto de Caléndula y Manzanilla, Aceite de Caléndula y Manzanilla.',
       price: 20,
       category: 'soaps',
-      image: '/assets/images/calendula-soap.jpg',
+      image: 'assets/images/calendula-soap.jpg',
       inStock: true,
       rating: 4.8,
       reviews: 145
@@ -702,7 +702,7 @@ export class DataService {
       description: 'Remineralizante. Limpiador. Exfoliante. Extrae el exceso de líquido. Antiinflamatorio. Contiene: Manteca de Cacao, Algas Marinas, Aceite de Romero.',
       price: 20,
       category: 'soaps',
-      image: '/assets/images/seaweed-soap.jpg',
+      image: 'assets/images/seaweed-soap.jpg',
       inStock: true,
       rating: 4.5,
       reviews: 67
@@ -713,7 +713,7 @@ export class DataService {
       description: 'Antiséptico. Antibacteriano. Disminuye la sensación de piernas cansadas. Aporta suavidad y frescura. Contiene: Extracto de Ruda.',
       price: 20,
       category: 'soaps',
-      image: '/assets/images/rue-soap.jpg',
+      image: 'assets/images/rue-soap.jpg',
       inStock: true,
       rating: 4.4,
       reviews: 78
