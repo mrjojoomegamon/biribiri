@@ -3,13 +3,14 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { ButtonComponent } from '../../shared/components/button/button.component';
 import { HeroBootcampComponent } from '../../shared/components/hero-bootcamp/hero-bootcamp.component';
+import { AboutSectionComponent } from '../../shared/components/about-section/about-section.component';
 import { DataService } from '../../core/services/data.service';
 import { Service, Supplement } from '../../core/models';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, RouterModule, ButtonComponent, HeroBootcampComponent],
+  imports: [CommonModule, RouterModule, ButtonComponent, HeroBootcampComponent, AboutSectionComponent],
   template: `
     <!-- Hero Bootcamp Section -->
     <app-hero-bootcamp></app-hero-bootcamp>
@@ -33,7 +34,7 @@ import { Service, Supplement } from '../../core/models';
                [style.background]="'linear-gradient(to right, var(--accent), var(--accent-hover))'">
             <span class="text-sm font-black uppercase tracking-wider" 
                   [style.color]="'var(--text-primary)'">
-              🏥 SERVICIOS PROFESIONALES CERTIFICADOS
+              🇨🇺 WORKOUT BIRI BIRI • ENTRENADOR CUBANO PROFESIONAL
             </span>
           </div>
 
@@ -49,7 +50,7 @@ import { Service, Supplement } from '../../core/models';
 
           <div class="max-w-3xl mx-auto mb-8">
             <p class="text-xl font-semibold mb-4" [style.color]="'var(--text-primary)'">
-              Técnicas respaldadas por <span class="font-black" [style.color]="'var(--accent)'">15+ años de experiencia</span> que han transformado a cientos de atletas
+              Metodología cubana + ciencia deportiva con <span class="font-black" [style.color]="'var(--accent)'">carisma y energía latina</span> que transforma vidas
             </p>
             <div class="flex items-center justify-center space-x-8 text-sm" [style.color]="'var(--text-secondary)'">
               <div class="flex items-center space-x-2">
@@ -236,6 +237,9 @@ import { Service, Supplement } from '../../core/models';
       </div>
     </section>
 
+    <!-- About Richard Carmona Section -->
+    <app-about-section></app-about-section>
+
     <!-- Supplements Showcase -->
     <section class="py-20 bg-bg-primary">
       <div class="max-w-container mx-auto px-4">
@@ -254,9 +258,9 @@ import { Service, Supplement } from '../../core/models';
           </h2>
           
           <p class="text-xl text-text-secondary max-w-3xl mx-auto mb-6">
-            🧬 Fórmulas científicamente respaldadas para atletas de elite
+            🧬 Fórmulas seleccionadas por Richard Carmona para máximo rendimiento
             <br>
-            <span class="text-accent font-bold">500+ atletas confían en nosotros</span>
+            <span class="text-accent font-bold">La pasión cubana aplicada a la nutrición deportiva</span>
           </p>
 
           <!-- Indicadores de confianza -->
@@ -298,7 +302,7 @@ import { Service, Supplement } from '../../core/models';
                 <img 
                   [src]="getSupplementImage(supplement.id)" 
                   [alt]="supplement.name"
-                  class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500">
+                  class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
               
@@ -388,7 +392,7 @@ import { Service, Supplement } from '../../core/models';
             
             <p class="text-text-secondary mb-6 max-w-2xl mx-auto">
               Descubre nuestro catálogo completo con aceites esenciales, cápsulas naturales, 
-              cremas especializadas y jabones artesanales. Todos con la calidad BIRIBIRI.
+              cremas especializadas y jabones artesanales. Todos con la calidad WORKOUT BIRI BIRI.
             </p>
             
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -451,8 +455,8 @@ import { Service, Supplement } from '../../core/models';
             No dejes que otro año pase sin lograr la transformación que mereces
           </p>
           <p class="text-xl mb-8 leading-relaxed" [style.color]="'rgba(255, 255, 255, 0.9)'">
-            Más de <span class="font-black" [style.color]="'var(--text-highlight)'">500 atletas</span> ya han dado el paso. 
-            <span class="font-bold">¿Qué estás esperando?</span>
+            Con la <span class="font-black" [style.color]="'var(--text-highlight)'">energía cubana de Richard</span> y más de 500 atletas transformados. 
+            <span class="font-bold">¿Listo para el cambio?</span>
           </p>
 
           <!-- Fear of Missing Out -->
@@ -482,7 +486,7 @@ import { Service, Supplement } from '../../core/models';
             </div>
           </div>
           <blockquote class="text-xl italic mb-6" [style.color]="'var(--text-primary)'">
-            "Después de años de lesiones y frustraciones, BIRIBIRI me devolvió la confianza. 
+            "La energía de Richard es contagiosa. Su método cubano + ciencia me devolvió la confianza. 
             En 30 días logré más progreso que en los últimos 2 años."
           </blockquote>
           <div class="flex items-center justify-center space-x-4">
@@ -576,7 +580,7 @@ import { Service, Supplement } from '../../core/models';
                    [style.background]="'linear-gradient(to right, var(--accent), var(--accent-hover))'">
                 <span class="text-sm font-black uppercase tracking-wider" 
                       [style.color]="'var(--text-primary)'">
-                  👕 COLECCIÓN EXCLUSIVA LIMITADA
+                  👕 WORKOUT BIRI BIRI • COLECCIÓN CUBANA EXCLUSIVA
                 </span>
               </div>
               <div class="bg-purple-600/20 px-3 py-1 rounded-full">
@@ -603,8 +607,8 @@ import { Service, Supplement } from '../../core/models';
                 Cada pieza cuenta tu historia de <span class="font-black" [style.color]="'var(--text-highlight)'">determinación y éxito</span>
               </p>
               <p class="leading-relaxed" [style.color]="'rgba(255, 255, 255, 0.9)'">
-                No es solo ropa. Es la armadura que llevas cuando conquistas tus límites. 
-                Diseñada para atletas que <span class="font-bold">no se conforman con menos</span>.
+                No es solo ropa. Es llevar el <span class="font-bold">espíritu cubano y la pasión de Richard</span> contigo. 
+                Diseñada para guerreros que <span class="font-bold">nunca se rinden</span>.
               </p>
             </div>
 
@@ -620,11 +624,11 @@ import { Service, Supplement } from '../../core/models';
                 </div>
                 <div>
                   <p class="font-bold text-sm" [style.color]="'var(--text-primary)'">50+ atletas profesionales</p>
-                  <p class="text-xs" [style.color]="'var(--text-secondary)'">ya forman parte del equipo BIRIBIRI</p>
+                  <p class="text-xs" [style.color]="'var(--text-secondary)'">ya forman parte del equipo WORKOUT BIRI BIRI</p>
                 </div>
               </div>
               <p class="italic text-sm" [style.color]="'var(--text-secondary)'">
-                "Cuando me pongo mi hoodie BIRIBIRI, siento que pertenezco a algo más grande. Es mi identidad de campeón."
+                "Cuando me pongo mi hoodie WORKOUT BIRI BIRI, siento que pertenezco a algo más grande. Es mi identidad de campeón."
               </p>
             </div>
 
@@ -745,8 +749,8 @@ import { Service, Supplement } from '../../core/models';
               <div class="relative overflow-hidden rounded-2xl shadow-2xl">
                 <img 
                   src="assets/images/merchandise-hoodie.jpg" 
-                  alt="BIRIBIRI Hoodie Premium - Edición Limitada"
-                  class="w-full max-w-lg mx-auto group-hover:scale-110 transition-transform duration-700">
+                  alt="WORKOUT BIRI BIRI Hoodie Premium - Edición Limitada"
+                  class="w-full max-w-xl mx-auto group-hover:scale-110 transition-transform duration-700">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 
                 <!-- Floating Price Tag -->

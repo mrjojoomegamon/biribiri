@@ -207,29 +207,65 @@ import { ButtonComponent } from '../button/button.component';
                    [style.background]="'linear-gradient(to right, var(--text-highlight), #ffa500)'"
                    [style.border-color]="'var(--accent)'">
                 <span class="text-black font-black text-sm uppercase tracking-wider">
-                  🏆 BOOTCAMP WARRIOR
+                  🏆 BOOTCAMP TEACHER
                 </span>
               </div>
             </div>
 
-            <!-- Training Preview -->
-            <div class="relative z-10 group">
-              <div class="relative overflow-hidden rounded-2xl shadow-2xl border-4"
-                   [style.border-color]="'var(--accent)'">
-                <!-- Training Image -->
-                <img 
-                  src="https://blog.institutoisaf.es/wp-content/uploads/2022/06/entrenamiento-funcional-boot-camp-isaf-805x415.jpg"
-                  alt="Entrenamiento Funcional Boot Camp - BIRIBIRI"
-                  class="w-full aspect-video object-cover group-hover:scale-105 transition-transform duration-700">
-                
-                <!-- Dark Overlay for Text Visibility -->
-                <div class="absolute inset-0 bg-black/40"></div>
-                
-                <!-- Content Overlay -->
-                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <div class="text-center text-white">
-                    <div class="text-2xl font-black mb-2">BOOTCAMP EXTREMO</div>
-                    <div class="text-sm font-bold">Entrenamiento Funcional de Elite</div>
+            <!-- Richard's Training Photos -->
+            <div class="relative z-10 space-y-6">
+              <!-- Main Profile Shot -->
+              <div class="relative group">
+                <div class="relative overflow-hidden rounded-2xl shadow-2xl border-4"
+                     [style.border-color]="'var(--accent)'">
+                  <img 
+                    src="assets/images/profile-photo.jpg"
+                    alt="Richard Carmona - Entrenador BIRIBIRI"
+                    class="w-full aspect-[4/5] object-cover group-hover:scale-105 transition-transform duration-700">
+                  
+                  <!-- Dark Overlay for Text Visibility -->
+                  <div class="absolute inset-0 bg-black/30"></div>
+                  
+                  <!-- Richard Badge -->
+                  <div class="absolute top-4 left-4 px-3 py-2 rounded-full shadow-lg"
+                       [style.background]="'linear-gradient(to right, var(--accent), var(--accent-hover))'">
+                    <span class="text-white font-black text-sm">🇨🇺 RICHARD CARMONA</span>
+                  </div>
+                  
+                  <!-- Content Overlay -->
+                  <div class="absolute bottom-6 left-6 right-6 bg-black/80 backdrop-blur-sm p-4 rounded-lg">
+                    <div class="text-center text-white">
+                      <div class="text-xl font-black mb-1">TU ENTRENADOR</div>
+                      <div class="text-sm font-bold">Carisma Cubano + Ciencia</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Action Shot -->
+              <div class="relative group">
+                <div class="relative overflow-hidden rounded-xl shadow-xl border-2"
+                     [style.border-color]="'var(--text-highlight)'">
+                  <img 
+                    src="assets/images/Sobre-mi.png"
+                    alt="Richard Carmona en acción - Entrenamiento profesional"
+                    class="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-700">
+                  
+                  <!-- Dark Overlay -->
+                  <div class="absolute inset-0 bg-black/30"></div>
+                  
+                  <!-- Action Badge -->
+                  <div class="absolute top-4 left-4 px-3 py-1 rounded-full"
+                       [style.background-color]="'var(--text-highlight)'">
+                    <span class="text-black font-bold text-sm">EN ACCIÓN</span>
+                  </div>
+                  
+                  <!-- Action Overlay -->
+                  <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <div class="text-center text-white">
+                      <div class="text-2xl font-black mb-2">BOOTCAMP EXTREMO</div>
+                      <div class="text-sm font-bold">Entrenamiento Funcional de Elite</div>
+                    </div>
                   </div>
                 </div>
               </div>

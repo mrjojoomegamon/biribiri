@@ -32,12 +32,9 @@ import { ButtonComponent } from '../../shared/components/button/button.component
         <div class="flex items-center">
           <a routerLink="/" class="flex items-center hover:opacity-80 transition-opacity">
             <img 
-              src="assets/images/logo.jpg" 
+              src="assets/images/logo negro.jpg" 
               alt="BIRIBIRI Logo"
-              class="h-12 w-auto mr-3">
-            <span class="text-3xl font-black tracking-wider text-text-primary hover:text-accent transition-colors">
-              BIRIBIRI
-            </span>
+              class="h-16 w-auto">
           </a>
         </div>
 
