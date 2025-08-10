@@ -38,7 +38,7 @@ import { ButtonComponent } from '../../shared/components/button/button.component
           <div class="relative">
             <div class="relative z-10">
               <img 
-                src="/assets/images/profile-photo.jpg" 
+                src="assets/images/profile-photo.jpg" 
                 alt="Fisioterapeuta especialista"
                 class="w-full max-w-md mx-auto rounded-lg shadow-card">
             </div>
@@ -364,11 +364,11 @@ import { ButtonComponent } from '../../shared/components/button/button.component
             <div class="flex items-center">
               <div class="flex space-x-2 mr-4">
                 <img 
-                  src="/assets/images/person1-before.jpg" 
+                  src="assets/images/person1-before.jpg" 
                   alt="Antes"
                   class="w-12 h-12 rounded-lg object-cover">
                 <img 
-                  src="/assets/images/person1-after.jpg" 
+                  src="assets/images/person1-after.jpg" 
                   alt="Después"
                   class="w-12 h-12 rounded-lg object-cover">
               </div>
@@ -393,11 +393,11 @@ import { ButtonComponent } from '../../shared/components/button/button.component
             <div class="flex items-center">
               <div class="flex space-x-2 mr-4">
                 <img 
-                  src="/assets/images/woman1-before.jpg" 
+                  src="assets/images/woman1-before.jpg" 
                   alt="Antes"
                   class="w-12 h-12 rounded-lg object-cover">
                 <img 
-                  src="/assets/images/woman1-after.jpg" 
+                  src="assets/images/woman1-after.jpg" 
                   alt="Después"
                   class="w-12 h-12 rounded-lg object-cover">
               </div>
@@ -421,7 +421,7 @@ import { ButtonComponent } from '../../shared/components/button/button.component
             </p>
             <div class="flex items-center">
               <img 
-                src="/assets/images/person2-before-after.jpg" 
+                src="assets/images/person2-before-after.jpg" 
                 alt="Antes y Después"
                 class="w-16 h-12 rounded-lg object-cover mr-4">
               <div>
